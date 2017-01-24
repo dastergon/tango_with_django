@@ -134,3 +134,6 @@ MEDIA_DIR = os.path.join(BASE_DIR, 'media')
 MEDIA_ROOT = MEDIA_DIR
 
 MEDIA_URL = '/media/'
+
+# URL to redirect users if they are not logged in
+LOGIN_URL = '/rango/login/'
