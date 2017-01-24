@@ -1,5 +1,7 @@
+from django.contrib.auth import authenticate, login
+from django.core.urlresolvers import reverse
+from django.http import HttpResponse, HttpResponseRedirect, HttpResponse
 from django.shortcuts import render
-from django.http import HttpResponse
 
 from rango.forms import CategoryForm
 from rango.forms import PageForm
