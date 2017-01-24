@@ -113,3 +113,7 @@ def user_login(request):
 def user_logout(request):
     logout(request)
     return HttpResponseRedirect(reverse('index'))
+
+@login_required
+def restricted(request):
+    return render(request, 'rango/restricted.html', {})
